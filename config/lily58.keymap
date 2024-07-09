@@ -5,9 +5,10 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     combos {
@@ -48,6 +49,7 @@
             bindings = <&kp>, <&kp>;
         };
     };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -107,13 +109,12 @@
 
         fn4_layer {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans  &trans  &trans  &trans  &sys_reset
-&trans      &trans            &trans             &trans             &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans            &trans             &trans             &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &to 0     &to 1   &trans  &trans  &trans  &trans  &trans  &trans
-                                                 &trans             &trans        &trans        &trans    &trans  &trans  &trans  &trans
+&bt BT_CLR    &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans  &trans  &trans  &trans  &sys_reset
+&out OUT_TOG  &out OUT_BLE      &out OUT_USB       &trans             &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans            &trans             &trans             &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &bootloader
+&trans        &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &to 0     &to 1   &trans  &trans  &trans  &trans  &trans  &trans
+                                                   &trans             &trans        &trans        &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
 };
-

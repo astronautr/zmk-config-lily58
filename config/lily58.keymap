@@ -89,11 +89,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans           &trans          &trans           &trans         &trans                                     &trans         &trans          &trans           &trans                &trans                 &kp DELETE
-&trans  &trans           &kp UP_ARROW    &kp GRAVE        &kp TILDE      &trans                                     &trans         &trans          &kp C_VOLUME_UP  &trans                &trans                 &kp EQUAL
-&trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &trans                                     &kp DELETE     &kp C_PREVIOUS  &kp C_VOL_DN     &kp C_NEXT            &kp BACKSLASH          &mo 4
-&trans  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH         &kp DOLLAR     &kp PERCENT  &kp RA(COMMA)    &kp RA(DOT)  &kp CARET      &kp AMPERSAND   &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-                                         &trans           &trans         &trans       &kp ENTER        &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP     &kp END
+&trans  &trans            &trans          &trans           &trans         &trans                                     &trans         &trans          &trans           &trans                &trans                 &kp DELETE
+&trans  &kp SINGLE_QUOTE  &kp UP_ARROW    &kp GRAVE        &kp TILDE      &trans                                     &trans         &trans          &kp C_VOLUME_UP  &trans                &trans                 &kp EQUAL
+&trans  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &trans                                     &kp DELETE     &kp C_PREVIOUS  &kp C_VOL_DN     &kp C_NEXT            &kp BACKSLASH          &mo 4
+&trans  &kp EXCLAMATION   &kp AT_SIGN     &kp HASH         &kp DOLLAR     &kp PERCENT  &kp RA(COMMA)    &kp RA(DOT)  &kp CARET      &kp AMPERSAND   &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+                                          &trans           &trans         &trans       &kp ENTER        &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP     &kp END
             >;
         };
 

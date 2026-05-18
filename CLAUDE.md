@@ -13,7 +13,7 @@ Firmware is built via GitHub Actions — push to `master` triggers the workflow 
 - `nice_nano_v2` + `lily58_right`
 - `nice_nano_v2` + `settings_reset`
 
-`config/west.yml` pins ZMK to release `v0.3.0`. Newer ZMK (Zephyr 4.1+) renames the board to the `nice_nano//zmk` variant — bumping the pin requires updating `board:` in `build.yaml` accordingly.
+ZMK is pinned to release `v0.3.0` in two coupled places that must always match: the firmware source (`config/west.yml` → `revision`) and the reusable workflow (`.github/workflows/build.yml` → `build-user-config.yml@<ref>`). Newer ZMK (Zephyr 4.1+) renames the board to the `nice_nano//zmk` variant — bumping the pin requires updating `board:` in `build.yaml` too.
 
 There is no local build setup. Download firmware artifacts from the GitHub Actions run.
 

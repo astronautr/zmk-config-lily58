@@ -74,8 +74,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "FN2_CAPS";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
             bindings = <&mo>, <&caps_oneshot>;
         };
     };

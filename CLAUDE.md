@@ -26,7 +26,7 @@ There is no local build setup. Download firmware artifacts from the GitHub Actio
 
 ## Keymap Architecture
 
-5 layers, accessed via `mo` (momentary) and `lt` (layer-tap) hold behaviors:
+6 layers, accessed via `mo` (momentary), `lt` (layer-tap), and custom hold-tap behaviors:
 
 | # | Name | Purpose | Activation |
 |---|------|---------|------------|
@@ -35,11 +35,13 @@ There is no local build setup. Download firmware artifacts from the GitHub Actio
 | 2 | fn2_layer | Navigation (WASD arrows), symbols row, media, delete | `mo 2` (left home-row hold) |
 | 3 | fn3_layer | Numpad (left), F-keys (right) | `lt 3 SPACE` / `lt 3 ENTER` |
 | 4 | fn4_layer | BT profile select/disconnect, BT clear, layer switch (`to 0`/`to 1`) | `mo 4` from layers 2/3 |
+| 5 | caps_cancel_layer | Internal transparent layer used to cancel one-shot Caps on a second tap | Activated together with one-shot Caps |
 
 Notable custom behaviors:
 - **hrm** — home-row mod (hold-tap, tap-preferred, 200ms tapping-term, 125ms prior-idle)
 - **ss_hs_modmorph** — sends `M` normally, `]` with shift
 - **kh_hs_tapdance** — tap `[`, double-tap `]`
+- **fn2_caps / caps_oneshot** — on the Mac layer, hold for layer 2; tap holds Caps through the next key; tap again to cancel
 - **combo_esc** — keys 0+1 → ESC (50ms timeout)
 - Shift keys double as parentheses via `mt` (mod-tap)
 

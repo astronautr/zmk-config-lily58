@@ -74,8 +74,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "FN2_CAPS";
             #binding-cells = <2>;
+            // Resolve chords on the next key press; use a shorter timeout for a lone hold.
             flavor = "hold-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&mo>, <&caps_oneshot>;
         };
     };

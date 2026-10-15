@@ -41,7 +41,7 @@ Notable custom behaviors:
 - **hrm** — home-row mod (hold-tap, tap-preferred, 200ms tapping-term, 125ms prior-idle)
 - **ss_hs_modmorph** — sends `M` normally, `]` with shift
 - **kh_hs_tapdance** — tap `[`, double-tap `]`
-- **fn2_caps / caps_oneshot** — on the Mac layer, hold for layer 2; tap holds Caps through the next key; tap again to cancel
+- **fn2_caps / caps_oneshot** — on the Mac layer, hold for layer 2 (hold-preferred: immediately on another key press, otherwise after 150ms); tap holds Caps through the next key; tap again to cancel
 - **combo_esc** — keys 0+1 → ESC (50ms timeout)
 - Shift keys double as parentheses via `mt` (mod-tap)
 
